@@ -38,7 +38,7 @@
                     android:layout_height="@dimen/logo_image_size"
                     android:layout_gravity="center"
                     android:contentDescription="@string/institution_short"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/logo_est_sb" />
             </FrameLayout>
 
             <!-- EST SB Title -->
