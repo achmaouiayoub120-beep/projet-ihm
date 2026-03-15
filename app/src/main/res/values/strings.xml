@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EST SB Smart Attendance - French Language Strings -->
+<resources>
+    <string name="app_name">EST SB Smart Attendance</string>
+    <string name="institution_name">École Supérieure de Technologie Sidi Bennour</string>
+    <string name="institution_short">EST SB</string>
+    <string name="smart_attendance">Smart Attendance</string>
+
+    <!-- Splash -->
+    <string name="splash_loading">Chargement…</string>
+
+    <!-- Login Screen -->
+    <string name="welcome_title">Bienvenue</string>
+    <string name="welcome_subtitle">Connectez-vous pour continuer</string>
+    <string name="email_hint">exemple@estsb.ma</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="remember_me">Se souvenir de moi</string>
+    <string name="forgot_password">Mot de passe oublié?</string>
+    <string name="login_button">Se connecter</string>
+    <string name="logging_in">Connexion…</string>
+    <string name="demo_accounts_title">Comptes de démonstration</string>
+    <string name="demo_student">student@estsb.ma</string>
+    <string name="demo_professor">prof@estsb.ma</string>
+    <string name="demo_admin">admin@estsb.ma</string>
+    <string name="demo_password">Mot de passe: password</string>
+    <string name="login_error_title">Erreur de connexion</string>
+    <string name="login_error_empty">Veuillez remplir tous les champs</string>
+    <string name="login_error_invalid">Email ou mot de passe incorrect</string>
+
+    <!-- Dashboard Common -->
+    <string name="welcome_prefix">Bonjour,</string>
+    <string name="logout">Déconnexion</string>
+    <string name="role_student">Étudiant</string>
+    <string name="role_professor">Professeur</string>
+    <string name="role_admin">Administrateur</string>
+
+    <!-- Professor Dashboard -->
+    <string name="professor_dashboard_title">Tableau de bord Professeur</string>
+    <string name="total_sessions">Sessions</string>
+    <string name="total_attendance">Présences</string>
+    <string name="attendance_rate">Taux</string>
+    <string name="quick_actions">Actions rapides</string>
+    <string name="generate_qr_session">Générer QR Session</string>
+    <string name="view_history">Voir l\'historique</string>
+    <string name="manage_sessions">Gérer les sessions</string>
+    <string name="recent_sessions">Sessions récentes</string>
+
+    <!-- Student Dashboard -->
+    <string name="student_dashboard_title">Tableau de bord Étudiant</string>
+    <string name="scan_qr">Scanner QR Code</string>
+    <string name="my_history">Mon historique</string>
+    <string name="my_attendance_summary">Résumé de mes présences</string>
+    <string name="present_count">Présences</string>
+    <string name="absent_count">Absences</string>
+
+    <!-- Generate QR Screen -->
+    <string name="generate_qr_title">Nouvelle Session</string>
+    <string name="module_name_hint">Nom du module</string>
+    <string name="group_name_hint">Nom du groupe</string>
+    <string name="generate_qr_button">Générer le QR Code</string>
+    <string name="session_active">Session active</string>
+    <string name="time_remaining">Restant</string>
+    <string name="regenerate_qr">Régénérer le QR</string>
+    <string name="end_session">Terminer la session</string>
+    <string name="qr_instructions_title">Instructions</string>
+    <string name="qr_instructions">1. Affichez ce QR code aux étudiants\n2. Le QR code expire automatiquement après 2 minutes\n3. Régénérez le QR code si nécessaire\n4. Cliquez sur \"Terminer\" pour finir la session</string>
+    <string name="error_fill_fields">Veuillez remplir tous les champs</string>
+
+    <!-- Scan QR Screen -->
+    <string name="scan_qr_title">Scanner QR Code</string>
+    <string name="scan_instruction">Placez le QR code dans le cadre pour marquer votre présence</string>
+    <string name="scan_success_title">Présence enregistrée!</string>
+    <string name="scan_invalid_qr">QR Code invalide</string>
+    <string name="scan_invalid_qr_msg">Ce QR code n\'est pas valide ou la session a expiré.</string>
+    <string name="scan_duplicate">Présence déjà enregistrée</string>
+    <string name="scan_duplicate_msg">Vous avez déjà marqué votre présence pour cette session.</string>
+    <string name="camera_permission_title">Accès à la caméra</string>
+    <string name="camera_permission_text">Cette application nécessite l\'accès à la caméra pour scanner les QR codes de présence.</string>
+    <string name="allow_access">Autoriser l\'accès</string>
+    <string name="cancel">Annuler</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Historique</string>
+    <string name="search_course">Rechercher un cours…</string>
+    <string name="filter_all">Tous</string>
+    <string name="filter_present">Présents</string>
+    <string name="filter_absent">Absents</string>
+    <string name="filter_late">Retards</string>
+    <string name="status_present">Présent</string>
+    <string name="status_absent">Absent</string>
+    <string name="status_late">Retard</string>
+    <string name="status_excused">Excusé</string>
+    <string name="sessions_count">Séances</string>
+    <string name="rate_label">Taux</string>
+    <string name="empty_history">Aucun enregistrement</string>
+    <string name="empty_history_text">Aucune présence trouvée pour les critères sélectionnés</string>
+
+    <!-- Session Details Screen -->
+    <string name="session_details_title">Détails de la session</string>
+    <string name="present_students">Étudiants présents</string>
+    <string name="absent_students">Étudiants absents</string>
+    <string name="session_info">Informations de la session</string>
+    <string name="module_label">Module</string>
+    <string name="group_label">Groupe</string>
+    <string name="date_label">Date</string>
+    <string name="professor_label">Professeur</string>
+    <string name="total_label">Total</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="error">Erreur</string>
+    <string name="no_data">Aucune donnée</string>
+</resources>

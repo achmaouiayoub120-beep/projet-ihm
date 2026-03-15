@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EST SB Smart Attendance - Color Palette (mirrored from existing theme.ts) -->
+<resources>
+    <!-- Primary EST SB Colors -->
+    <color name="primaryDark">#0F2744</color>
+    <color name="primaryDarkBlue">#1A3A6B</color>
+    <color name="primaryBlue">#1E5FA8</color>
+    <color name="primaryLight">#2B7FD4</color>
+    <color name="accentBlue">#29B6F6</color>
+    <color name="glowBlue">#4FC3F7</color>
+
+    <!-- Green Ecosystem -->
+    <color name="darkGreen">#1B5E20</color>
+    <color name="emerald">#4CAF50</color>
+    <color name="lightGreen">#4CAF50</color>
+    <color name="mint">#69F0AE</color>
+
+    <!-- Warm Accents -->
+    <color name="coral">#FF6B6B</color>
+    <color name="sunset">#FF8E53</color>
+    <color name="amber">#FFB300</color>
+
+    <!-- Neutral Palette -->
+    <color name="white">#FFFFFF</color>
+    <color name="snow">#FAFBFC</color>
+    <color name="background">#F0F4F8</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Text Hierarchy -->
+    <color name="textPrimary">#0D1B2A</color>
+    <color name="textSecondary">#415A77</color>
+    <color name="textTertiary">#778DA9</color>
+    <color name="textMuted">#9DB4C0</color>
+
+    <!-- Semantic Colors -->
+    <color name="success">#10B981</color>
+    <color name="successLight">#D1FAE5</color>
+    <color name="error">#EF4444</color>
+    <color name="errorLight">#FEE2E2</color>
+    <color name="warning">#F59E0B</color>
+    <color name="warningLight">#FEF3C7</color>
+    <color name="info">#3B82F6</color>
+
+    <!-- Transparency variants (for glassmorphism effect) -->
+    <color name="glassWhite">#D9FFFFFF</color>
+    <color name="glassLight">#80FFFFFF</color>
+    <color name="glassDark">#CC0F2744</color>
+    <color name="inputBackground">#14FFFFFF</color>
+    <color name="inputBorderDefault">#33FFFFFF</color>
+    <color name="inputBorderFocused">#29B6F6</color>
+    <color name="cardOverlay">#26FFFFFF</color>
+    <color name="statusBarColor">#071221</color>
+
+    <!-- Gradient Splash start/end (for programmatic use) -->
+    <color name="gradientSplashStart">#071221</color>
+    <color name="gradientSplashMid">#0F2744</color>
+    <color name="gradientSplashEnd">#1A3A6B</color>
+</resources>

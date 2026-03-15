@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EST SB Smart Attendance - Generate QR Code Layout -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_xl">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/spacing_md"
+            android:paddingBottom="@dimen/spacing_lg">
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/input_background"
+                android:gravity="center"
+                android:text="‹"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/generate_qr_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_h4"
+                android:textStyle="bold" />
+
+            <!-- Spacer -->
+            <android.widget.Space
+                android:layout_width="44dp"
+                android:layout_height="44dp" />
+        </LinearLayout>
+
+        <!-- FORM SECTION (visible before QR generation) -->
+        <LinearLayout
+            android:id="@+id/formSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Module Name Input -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_md"
+                app:cardBackgroundColor="@color/cardOverlay"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="0dp">
+
+                <EditText
+                    android:id="@+id/editModuleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/module_name_hint"
+                    android:paddingStart="@dimen/spacing_lg"
+                    android:paddingEnd="@dimen/spacing_lg"
+                    android:textColor="@color/white"
+                    android:textColorHint="#66FFFFFF"
+                    android:textSize="@dimen/text_body" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Group Name Input -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_xxl"
+                app:cardBackgroundColor="@color/cardOverlay"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="0dp">
+
+                <EditText
+                    android:id="@+id/editGroupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/group_name_hint"
+                    android:paddingStart="@dimen/spacing_lg"
+                    android:paddingEnd="@dimen/spacing_lg"
+                    android:textColor="@color/white"
+                    android:textColorHint="#66FFFFFF"
+                    android:textSize="@dimen/text_body" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Generate Button -->
+            <TextView
+                android:id="@+id/btnGenerateQR"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_gradient"
+                android:elevation="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/generate_qr_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_body"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- QR CODE SECTION (visible after QR generation) -->
+        <LinearLayout
+            android:id="@+id/qrSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- QR Code Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/qrCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/card_corner_radius_large"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_xxl">
+
+                    <!-- QR Code Image -->
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/qr_container_bg"
+                        android:padding="@dimen/qr_container_padding">
+
+                        <ImageView
+                            android:id="@+id/imgQRCode"
+                            android:layout_width="@dimen/qr_code_size"
+                            android:layout_height="@dimen/qr_code_size"
+                            android:contentDescription="QR Code" />
+                    </FrameLayout>
+
+                    <!-- Timer -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xl"
+                        android:background="@drawable/rounded_chip_bg"
+                        android:backgroundTint="#1AEF4444"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/spacing_lg"
+                        android:paddingTop="@dimen/spacing_sm"
+                        android:paddingEnd="@dimen/spacing_lg"
+                        android:paddingBottom="@dimen/spacing_sm">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⏱ "
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtTimer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="02:00"
+                            android:textColor="@color/primaryBlue"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:id="@+id/txtTimerLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/spacing_sm"
+                            android:text="@string/time_remaining"
+                            android:textColor="@color/textTertiary"
+                            android:textSize="@dimen/text_body_small" />
+                    </LinearLayout>
+
+                    <!-- Regenerate Button -->
+                    <TextView
+                        android:id="@+id/btnRegenerateQR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_lg"
+                        android:background="@drawable/rounded_chip_bg"
+                        android:backgroundTint="#1A1E5FA8"
+                        android:drawablePadding="@dimen/spacing_sm"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingStart="@dimen/spacing_xl"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="@dimen/spacing_xl"
+                        android:paddingBottom="10dp"
+                        android:text="@string/regenerate_qr"
+                        android:textColor="@color/primaryBlue"
+                        android:textSize="@dimen/text_body_small"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- End Session Button -->
+            <TextView
+                android:id="@+id/btnEndSession"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:background="@drawable/rounded_chip_bg"
+                android:backgroundTint="#4DEF4444"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/end_session"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_body"
+                android:textStyle="bold" />
+
+            <!-- Instructions Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:background="@drawable/glass_card_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_xl">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_md"
+                    android:text="@string/qr_instructions_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_body"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/qr_instructions"
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="@dimen/text_body_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

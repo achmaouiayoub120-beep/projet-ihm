@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EST SB Smart Attendance - Dimension Resources (8-point grid system) -->
+<resources>
+    <!-- Spacing -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_lg">16dp</dimen>
+    <dimen name="spacing_xl">20dp</dimen>
+    <dimen name="spacing_xxl">24dp</dimen>
+    <dimen name="spacing_xxxl">32dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_display">40sp</dimen>
+    <dimen name="text_h1">32sp</dimen>
+    <dimen name="text_h2">24sp</dimen>
+    <dimen name="text_h3">20sp</dimen>
+    <dimen name="text_h4">18sp</dimen>
+    <dimen name="text_body_large">17sp</dimen>
+    <dimen name="text_body">16sp</dimen>
+    <dimen name="text_body_small">14sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_overline">11sp</dimen>
+    <dimen name="text_button">16sp</dimen>
+
+    <!-- Corner Radius -->
+    <dimen name="corner_xs">6dp</dimen>
+    <dimen name="corner_sm">8dp</dimen>
+    <dimen name="corner_md">12dp</dimen>
+    <dimen name="corner_lg">16dp</dimen>
+    <dimen name="corner_xl">20dp</dimen>
+    <dimen name="corner_xxl">24dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_corner_radius_large">24dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+
+    <!-- Button -->
+    <dimen name="button_corner_radius">16dp</dimen>
+    <dimen name="button_padding_vertical">16dp</dimen>
+    <dimen name="button_padding_horizontal">24dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+
+    <!-- Input -->
+    <dimen name="input_corner_radius">16dp</dimen>
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="input_padding">16dp</dimen>
+
+    <!-- Icon sizes -->
+    <dimen name="icon_sm">20dp</dimen>
+    <dimen name="icon_md">24dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+    <dimen name="icon_xl">48dp</dimen>
+
+    <!-- Avatar -->
+    <dimen name="avatar_size">56dp</dimen>
+    <dimen name="avatar_size_small">40dp</dimen>
+    <dimen name="avatar_size_large">90dp</dimen>
+
+    <!-- QR Code -->
+    <dimen name="qr_code_size">220dp</dimen>
+    <dimen name="qr_container_padding">16dp</dimen>
+
+    <!-- Logo -->
+    <dimen name="logo_size">90dp</dimen>
+    <dimen name="logo_image_size">60dp</dimen>
+    <dimen name="logo_size_small">48dp</dimen>
+</resources>
