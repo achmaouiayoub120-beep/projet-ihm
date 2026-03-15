@@ -55,3 +55,19 @@ Permettre aux professeurs de générer des QR codes de session et aux étudiants
 - Option "Se souvenir de moi"
 - Déconnexion sécurisée
 - Design premium (glassmorphism, dégradés, animations)
+
+## 🚀 Comment Lancer / Installer le Projet
+
+### Prérequis
+- **Android Studio** installé sur votre machine.
+- Un émulateur Android (AVD) ou un appareil physique sous **Android 7.0 (API 24) minimum**.
+
+### Étapes d'installation
+1. **Cloner ou télécharger** le projet sur votre machine locale.
+2. Lancer **Android Studio**.
+3. Cliquer sur **"Open"** (Ouvrir) et sélectionner le dossier racine du projet.
+4. Patienter pendant la **synchronisation de Gradle** (cela peut prendre quelques minutes lors de la première ouverture).
+5. Sélectionner un appareil cible (Émulateur ou Appareil physique) dans le menu déroulant en haut de l'interface.
+6. Cliquer sur le bouton vert **"Run 'app'"** (▶️) ou utiliser le raccourci `Shift + F10` pour compiler et installer l'application sur l'appareil.
+
+> **Note :** Le projet utilise une base de données locale (SQLite). Aucune configuration serveur ou API n'est requise. Vous pouvez vous connecter directement avec les comptes de démonstration fournis plus haut !
